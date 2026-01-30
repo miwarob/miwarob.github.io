@@ -1,5 +1,4 @@
-const bookingUrl =
-  "https://calendar.google.com/calendar/appointments/schedules/REPLACE_WITH_YOUR_ID";
+const bookingUrl = "https://flow-state-healing-and-massage.square.site";
 
 document.querySelectorAll("[data-booking-link]").forEach((link) => {
   link.setAttribute("href", bookingUrl);
