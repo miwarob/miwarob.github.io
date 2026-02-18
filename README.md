@@ -1,19 +1,27 @@
 # Flow State Healing & Massage (GitHub Pages)
 
-Static site version of the Flow State Healing & Massage website for GitHub Pages.
+Static multi-page site that mirrors the Square website structure:
 
-## Booking setup
+- `index.html` (Home)
+- `services.html`
+- `store.html`
+- `about.html`
+- `connect.html`
 
-Update the booking URL in `assets/scripts.js`:
+`contact.html` is kept as a compatibility redirect to `connect.html`.
 
-```
-const bookingUrl =
-  "https://calendar.google.com/calendar/appointments/schedules/REPLACE_WITH_YOUR_ID";
-```
+## Square links
+
+Booking and store URLs are centralized in `assets/scripts.js`:
+
+- `bookingUrl` -> `https://flow-state-healing-and-massage.square.site/book`
+- `storeUrl` -> `https://flow-state-healing-and-massage.square.site/s/shop`
+
+Any link with `data-booking-link` or `data-store-link` is automatically updated.
 
 ## GitHub Pages
 
 1. Push this repo to GitHub.
-2. In GitHub, go to Settings → Pages.
+2. In GitHub, go to Settings -> Pages.
 3. Set Source to the `main` branch and `/ (root)` folder.
 4. Save and wait for the Pages build to finish.

@@ -3,22 +3,21 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>About | Flow State Healing & Massage</title>
+    <title>About | Flow State Healing &amp; Massage</title>
     <meta
       name="description"
-      content="Learn the Flow State Healing philosophy: earth connected, body centered, mindfulness based. Meet Miwa, licensed massage therapist in Greenville, SC."
+      content="Meet Miwa Robbins, licensed massage therapist, Thai massage practitioner, and craniosacral therapist in Greenville, SC."
     />
     <meta property="og:title" content="About Flow State Healing" />
     <meta
       property="og:description"
-      content="Earth connected, body centered, mindfulness based care in Greenville, SC."
+      content="Earth connected, body centered, and mindfulness based healing in Greenville, SC."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.miwarobbins.com/about.html" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Inter:wght@300;400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Rock+Salt&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/styles.css" />
@@ -27,190 +26,104 @@
     <header class="site-header">
       <div class="container header-inner">
         <a class="logo" href="index.html">
-          <img src="assets/images/logo.jpg" alt="Flow State Healing logo" />
+          <img src="assets/images/logo.jpg" alt="Flow State Healing &amp; Massage" />
           <span>Flow State Healing</span>
         </a>
-        <nav class="site-nav">
+        <button
+          class="nav-toggle"
+          type="button"
+          data-nav-toggle
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+        >
+          Menu
+        </button>
+        <nav class="site-nav" data-nav-panel data-open="false" aria-label="Primary">
           <a href="index.html">Home</a>
-          <a href="services.html">Services</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Connect</a>
+          <a href="about.html" aria-current="page">About</a>
+          <a href="connect.html">Connect</a>
+          <a href="https://squareup.com/gift/82NQ9ZHNE9HA6/order" target="_blank" rel="noopener">Gift Card</a>
         </nav>
-        <div class="header-cta">
-          <a class="btn btn-outline" href="tel:8432843532">Call / Text Now</a>
+        <div class="header-actions">
+          <div class="social-icons">
+            <a href="mailto:miwarobbins@gmail.com" aria-label="Email">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </a>
+            <a href="#" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 01-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 017.8 2zm-.2 2A3.6 3.6 0 004 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 003.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6zm9.65 1.5a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 2a3 3 0 100 6 3 3 0 000-6z"/></svg>
+            </a>
+          </div>
           <a class="btn btn-primary" data-booking-link href="#">Book Online</a>
         </div>
       </div>
     </header>
 
     <main>
-      <section class="page-hero page-hero--about">
-        <div class="container page-hero-inner">
-          <p class="eyebrow">Our philosophy</p>
-          <h1>The Flow State Healing Philosophy</h1>
-          <p class="subtitle">
-            Earth connected, body centered, and mindfulness based.
-          </p>
-          <a class="btn btn-primary" data-booking-link href="#">
-            Book a session
-          </a>
-        </div>
-      </section>
-
       <section class="section">
-        <div class="container split">
-          <div>
-            <h2>Earth Connected</h2>
-            <p class="section-lead">
-              We are all connected by belonging to this Earth.
-            </p>
-            <p>
-              No matter what faith or path you walk, every person benefits from
-              feeling connected to something larger than themselves and to the
-              earth. Nature's cycles are a reflection of cycles within
-              ourselves, and my methods and practices are rooted in honoring
-              that connection.
-            </p>
-          </div>
-          <div
-            class="about-photo"
-            style="background-image: url('assets/images/about/yoga-by-the-sea.jpg')"
-            role="img"
-            aria-label="Practicing yoga by the sea"
-          ></div>
-        </div>
-      </section>
-
-      <section class="section section-muted">
-        <div class="container split">
-          <div
-            class="about-photo"
-            style="background-image: url('assets/images/about/meditation-by-the-sea.jpg')"
-            role="img"
-            aria-label="Meditation by the sea"
-          ></div>
-          <div>
-            <h2>Body Centered</h2>
-            <p class="section-lead">
-              Your willingness to observe your body is one of the most powerful
-              decisions you can make.
-            </p>
-            <p>
-              Our bodies store emotions, memories, beliefs, and experiences,
-              sometimes manifesting as pain, tension, or discomfort. Through
-              healing touch I help you become more aware of what your body is
-              telling you so you can release what no longer serves you.
-            </p>
-            <p>
-              I use Thai massage, neuromuscular deep tissue, craniosacral
-              therapy, energy work, and breath to help your body return to
-              balance.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container split">
-          <div>
-            <h2>Mindfulness Based</h2>
-            <p class="section-lead">Awareness is the first step towards change.</p>
-            <p>
-              Guided meditation, breath awareness, and body awareness all go
-              hand in hand. Just 15 minutes of meditation a day has been shown
-              to shift brain and body chemistry. Simple belly breathing can help
-              switch the nervous system from fight-or-flight into rest and
-              repair mode.
-            </p>
-            <p>
-              During sessions I may ask you to bring attention to your breath
-              and sensations in the body. The breath is the bridge between the
-              conscious and the unconscious, helping your body feel safe enough
-              to let go and heal.
-            </p>
-          </div>
-          <div
-            class="about-photo"
-            style="background-image: url('assets/images/about/sat-on-the-rocks.jpg')"
-            role="img"
-            aria-label="Woman sitting on rocks by the ocean"
-          ></div>
-        </div>
-      </section>
-
-      <section class="section section-muted">
-        <div class="container split">
-          <div class="about-bio">
-            <div class="about-bio-header">
-              <img
-                src="assets/images/about/headshot.png"
-                alt="Miwa Robbins headshot"
-              />
-              <div>
-                <h2>Meet Miwa</h2>
-                <p class="section-lead">
-                  Licensed Massage Therapist, SC License #11775, Certified Thai
-                  Massage Practitioner, Herbalist, &amp; Craniosacral Therapist.
-                </p>
-              </div>
+        <div class="container">
+          <div class="about-split">
+            <div class="about-text">
+              <h2>Meet Miwa</h2>
+              <p class="credentials">
+                (She/her/hers) Licensed Massage Therapist, SC License #11775 &middot;
+                Certified Thai Massage Practitioner &middot; Craniosacral Therapist
+              </p>
+              <p>
+                I am a licensed massage therapist, certified Thai massage practitioner, and craniosacral
+                therapist. I come from two generations of healers and psychotherapists, and feel deeply
+                grateful to offer this work.
+              </p>
+              <p>
+                I see mind, body, and spirit as fully connected. The body holds truth in its posture,
+                patterns, and scars. My gift is working through the physical body as a doorway to deeper
+                healing. Massage is often the gateway, and from there, the therapeutic journey can go as
+                deep as you desire.
+              </p>
+              <p>
+                I didn't always know I would become a healer. In fact, I resisted it for a long time. But
+                the call was persistent, and once I surrendered to it, everything aligned. I now feel
+                honored to walk alongside my clients on their healing journeys.
+              </p>
             </div>
-            <p>
-              I love what I do and feel incredibly grateful to have landed in a
-              profession that fulfills and supports me as much as it does my
-              clients. I come from two generations of healers, bodyworkers, and
-              psychotherapists. When I finally embraced the call, my path began
-              to blossom.
-            </p>
-            <p>
-              I see mind, body, and spirit as connected. My gift is to work
-              primarily through the physical as a doorway to healing on all
-              levels. The body does not lie — it holds patterns, stories, and
-              truths that can be supported with attentive touch and presence.
-            </p>
-            <p>
-              Massage and bodywork are often the gateway, and the journey can go
-              as deep as you want it to go.
-            </p>
-          </div>
-          <div class="about-photo portrait">
-            <img
-              src="assets/images/about/miwa-portrait.jpg"
-              alt="Portrait of Miwa by the ocean"
-            />
+            <div class="about-image">
+              <img src="assets/images/about/miwa-portrait.jpg" alt="Portrait of Miwa Robbins" />
+            </div>
           </div>
         </div>
       </section>
 
+      <section class="section section--dark testimonial-section">
+        <div class="container">
+          <blockquote class="testimonial">
+            <p>
+              "Miwa is the best massage/cranial sacral practitioner out there. I saw her in Charleston
+              and she provided me with deep relaxation, pain relief, and even healed a scar on my ankle!
+              She is so dialed into spirit that it is unmistakeable. I will miss her being in my area!"
+            </p>
+            <cite>&mdash; Karen, From Google Reviews</cite>
+          </blockquote>
+        </div>
+      </section>
+
       <section class="section">
-        <div class="container split">
-          <div class="testimonial-card">
-            <h2>What people say</h2>
+        <div class="container">
+          <div class="inclusive-section">
+            <h2>An Inclusive Business</h2>
             <p>
-              “As a nationally certified massage therapist and professional body
-              and energy worker for over 20 years, I’ve had the great pleasure
-              of receiving many types of bodywork. Many are skilled, but what
-              makes one great is instinct. Miwa is one of the rare gifted ones
-              who has both. Her skills combined with intuition and strength made
-              my Thai session the best I’ve ever had.”
-            </p>
-            <p class="small">— Edie Allen</p>
-            <p class="small">
-              All testimonials are from publicly posted reviews or shared with
-              client permission.
-            </p>
-          </div>
-          <div class="inclusion-card">
-            <h3>All are welcome</h3>
-            <p>
-              Flow State Healing is an inclusive business that welcomes all
-              people of all shapes, regardless of gender, race, sexual
-              orientation, religion, or political identity. Hate speech or
-              harassment of any kind will not be tolerated.
+              Flow State Healing welcomes all people of all shapes, regardless of gender, race, sexual
+              orientation, religion, or political identity. We celebrate diversity and expect mutual
+              respect and compassion from everyone who enters this space.
             </p>
             <p>
-              Our space is not fully ADA compliant yet. If you have specific
-              physical limitations, please reach out so we can do our best to
-              accommodate you.
+              There is zero tolerance for hate speech or harassment of any kind. This is a safe space
+              dedicated to supporting healing journeys for all.
+            </p>
+            <p class="note">
+              The studio space has ADA limitations. If you have specific physical accessibility needs,
+              please contact me before booking so we can discuss accommodations.
             </p>
           </div>
         </div>
@@ -219,27 +132,38 @@
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <div>
-          <div class="logo logo-footer">
-            <img src="assets/images/logo.jpg" alt="Flow State Healing logo" />
-            <span>Flow State Healing</span>
-          </div>
-          <p class="small">Mind Body Spirit Alignment</p>
+        <div class="footer-brand">
+          <a class="logo" href="index.html">
+            <img src="assets/images/logo.jpg" alt="Flow State Healing &amp; Massage" />
+          </a>
+          <p>Flow State Healing &amp; Massage</p>
+          <p class="footer-tagline">Mind Body Spirit Alignment</p>
         </div>
-        <div class="footer-links">
-          <a href="#" aria-disabled="true">Instagram</a>
-          <a href="#" aria-disabled="true">Facebook</a>
-          <a href="#" aria-disabled="true">YouTube</a>
+        <div class="footer-social">
+          <a href="mailto:miwarobbins@gmail.com" aria-label="Email">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 01-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 017.8 2zm-.2 2A3.6 3.6 0 004 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 003.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6zm9.65 1.5a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 2a3 3 0 100 6 3 3 0 000-6z"/></svg>
+          </a>
         </div>
-        <div class="footer-contact">
-          <a href="mailto:miwarobbins@gmail.com">miwarobbins@gmail.com</a>
-          <a href="tel:8432843532">843.284.3532</a>
+        <div class="footer-newsletter">
+          <h3>Stay in the Loop</h3>
+          <p>Subscribe to our newsletter. I promise to only contact you when I have something important to say.</p>
+          <form class="newsletter-form" action="#" method="post">
+            <input type="email" placeholder="Email Address" name="email" required />
+            <button class="btn btn-primary" type="button">Subscribe</button>
+          </form>
         </div>
       </div>
-      <p class="small footer-note">©2022 by Mind Body Spirit Alignment.</p>
+      <div class="container footer-bottom">
+        <p>&copy; <span data-current-year></span> Flow State Healing &amp; Massage</p>
+      </div>
     </footer>
 
     <script src="assets/scripts.js"></script>
   </body>
 </html>
-
