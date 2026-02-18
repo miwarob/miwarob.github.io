@@ -389,26 +389,30 @@ h3 {
 
 /* ---- Inclusive Business ---- */
 
-.inclusive-section {
-  text-align: center;
-  max-width: 760px;
-  margin: 0 auto;
+.inclusive-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
 }
 
-.inclusive-section h2 {
+.inclusive-col h2 {
   margin-bottom: 1.2rem;
 }
 
-.inclusive-section p {
+.inclusive-col p {
   color: var(--color-text-muted);
   font-size: 0.94rem;
   line-height: 1.85;
   margin-bottom: 1rem;
+  font-weight: 700;
 }
 
-.inclusive-section .note {
-  font-size: 0.85rem;
-  opacity: 0.7;
+.inclusive-col-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
 }
 
 /* ---- Connect: Contact ---- */
@@ -599,6 +603,10 @@ h3 {
   }
 
   .about-split {
+    grid-template-columns: 1fr;
+  }
+
+  .inclusive-columns {
     grid-template-columns: 1fr;
   }
 
