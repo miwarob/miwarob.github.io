@@ -2,6 +2,8 @@ const bookingUrl = "https://flow-state-healing-and-massage.square.site";
 
 document.querySelectorAll("[data-booking-link]").forEach((link) => {
   link.setAttribute("href", bookingUrl);
+  link.setAttribute("target", "_blank");
+  link.setAttribute("rel", "noopener noreferrer");
 });
 
 const navToggle = document.querySelector("[data-nav-toggle]");
