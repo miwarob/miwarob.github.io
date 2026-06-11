@@ -150,6 +150,19 @@ document.querySelectorAll("[data-carousel]").forEach(function (carousel) {
   var typeSelect = form.querySelector("[data-inquiry-type-select]");
   var conditionalFields = form.querySelectorAll("[data-inquiry-only]");
 
+  // Thank-you message after successful submission (Formspree redirects back with ?sent=1)
+  if (window.location.search.indexOf("sent=1") !== -1) {
+    var thanks = document.querySelector("[data-inquiry-thanks]");
+    var intro = document.querySelector(".inquiry-form-intro");
+    if (thanks) thanks.hidden = false;
+    if (intro) intro.hidden = true;
+    form.hidden = true;
+    var thanksTarget = thanks || form;
+    if (thanksTarget && thanksTarget.scrollIntoView) {
+      thanksTarget.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }
+
   function syncFields() {
     var selected = typeSelect.value;
     conditionalFields.forEach(function (field) {

@@ -127,24 +127,23 @@
         <div class="container">
           <h2 class="retreat-section-heading">Gallery</h2>
           <div class="retreat-gallery">
-            <!-- TODO: Replace placeholder src with your actual photo file names in assets/images/ -->
             <div class="retreat-gallery-item">
-              <img src="assets/images/mayu-exterior.jpg" alt="Mayu tiny house exterior" />
+              <img src="assets/images/mayu-exterior.jpg" alt="Mayu tiny house exterior" loading="lazy" />
             </div>
             <div class="retreat-gallery-item">
-              <img src="assets/images/mayu-interior.jpeg" alt="Mayu tiny house interior" />
+              <img src="assets/images/mayu-interior.jpeg" alt="Mayu tiny house interior" loading="lazy" />
             </div>
             <div class="retreat-gallery-item">
-              <img src="assets/images/mayu-loft.jpeg" alt="Sleeping loft with queen mattress" />
+              <img src="assets/images/mayu-loft.jpeg" alt="Sleeping loft with queen mattress" loading="lazy" />
             </div>
             <div class="retreat-gallery-item">
-              <img src="assets/images/mayu-kitchen.jpeg" alt="Kitchen with fridge, sink, and tea kettle" />
+              <img src="assets/images/mayu-kitchen.jpeg" alt="Kitchen with fridge, sink, and tea kettle" loading="lazy" />
             </div>
             <div class="retreat-gallery-item">
-              <img src="assets/images/mayu-bath.jpeg" alt="Full shower and compost toilet" style="object-position: center 60%;" />
+              <img src="assets/images/mayu-bath.jpeg" alt="Full shower and compost toilet" loading="lazy" style="object-position: center 60%;" />
             </div>
             <div class="retreat-gallery-item">
-              <img src="assets/images/mayu-outdoor.jpeg" alt="Outdoor space around Mayu" />
+              <img src="assets/images/mayu-outdoor.jpeg" alt="Outdoor space around Mayu" loading="lazy" />
             </div>
           </div>
         </div>
@@ -216,6 +215,12 @@
         <div class="container">
           <div class="inquiry-form-wrap">
             <h2 class="retreat-section-heading">Make an Inquiry</h2>
+            <div class="inquiry-thanks" data-inquiry-thanks hidden>
+              <p>
+                Thank you! Your inquiry has been received.
+                I&rsquo;ll be in touch within 24 hours.
+              </p>
+            </div>
             <p class="inquiry-form-intro">
               Fill out the form below and I&rsquo;ll be in touch within 24 hours.
             </p>
@@ -225,6 +230,16 @@
               method="POST"
               data-inquiry
             >
+              <input type="hidden" name="_next" value="https://www.miwarobbins.com/retreat.html?sent=1" />
+              <input
+                type="text"
+                name="_gotcha"
+                tabindex="-1"
+                autocomplete="off"
+                aria-hidden="true"
+                style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;"
+              />
+
               <label class="inquiry-field">
                 <span>Type of stay</span>
                 <select name="type" data-inquiry-type-select required>
